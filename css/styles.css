@@ -7,6 +7,7 @@ body {
   background-color: #1abc9c;
   margin: 0;
   font-family: 'Merriweather',serif;
+  text-align: center;
 }
 
 h1 {
@@ -21,6 +22,10 @@ h2 {
 
 h3 {
   font-family: 'Montserrat', sans-serif;
+}
+
+.award_images {
+  width: 50%;
 }
 
 .coder {
@@ -60,13 +65,26 @@ h3 {
 }
 
 .second_div {
-  background-color: red;
-  width: 200px;
-  height: 200px;
 }
 
-.third_div {
-  background-color: blue;
-  width: 200px;
-  height: 200px;
+.profile {
+}
+
+.sumit_image {
+  width: 120px;
+  height: 180px;
+}
+
+.skill_image {
+  width: 320px;
+  height: 320px;
+}
+
+.skill_separator {
+  border-color: #34495e;
+  border-style: none;
+  border-top-style: dotted;
+  border-width: 5px;
+  width: 5%;
+  height: 0;
 }
