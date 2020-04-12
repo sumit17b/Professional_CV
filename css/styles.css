@@ -1,20 +1,62 @@
+/*
+https://developer.mozilla.org/en-US/docs/Web/CSS/margin
+
+*/
+
 body {
   background-color: #1abc9c;
   margin: 0;
+  font-family: 'Merriweather',serif;
 }
 
 h1 {
   margin-top: 0;
+  font-family: 'Sacramento',cursive;
+  font-size: 3em;
 }
 
-.pro {
-  text-decoration: underline;
+h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.coder {
+  font-family: 'PT Mono', monospace;
+  font-size: 20px;
+}
+
+.movie {
+  font-family: 'Permanent Marker',cursive;
+  font-size: 20px;
 }
 
 .first_div {
   background-color: #3498db;
   padding: 2.8%;
   margin: 1.6%;
+  text-align: center;
+  position: relative; /*its children can have absolute position and their position value will be relative to this*/
+}
+
+.first_cloud {
+  display: block;
+  float: right;
+  position: absolute;
+  left: 72%;
+  top: 1%;
+}
+
+.second_cloud {
+  position: absolute;
+  left: 24%;
+  bottom: 56%;
+}
+
+.mountain {
+  display: inline;
 }
 
 .second_div {
