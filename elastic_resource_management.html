@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&family=Montserrat:ital,wght@0,600;1,500&family=PT+Mono&family=Permanent+Marker&family=Sacramento&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h2>Elastic Resource Management (Horizontal Scalability)</h2>
+    <h3><strong>Aim of the project:</strong> Add manual controls to IC Validator, to allow users to dynamically add and remove resources.</h3>
+    <a href="https://finance.yahoo.com/news/synopsys-ups-ante-eda-next-162704450.html?.tsrc=rss">This project enabled customers deploy IC Validator on the cloud.</a>
+    <p>Duration of Project: March 2018 to February 2019</p>
+    <p>Technology used: C | C++</p>
+    <hr class="skill_separator">
+    <h4>Dynamically Adding Resources</h4>
+    <p>Since resources on the cloud are not always available, users should have the ability to add resources as they become available.</p>
+    <p>This project created the infrastructure to unobtrusively add resources.</p>
+    <p>This registers the newly added resource with the server and enables the server to schedule tasks on it.</p>
+    <hr class="skill_separator">
+    <h4>Dynamically Removing Resources</h4>
+    <p>There is a cost involved in using resources on the cloud. So users should be able to dynamically relinquish resources to lower cost of usage.</p>
+    <p>To dynamically remove a resource while it is being used it is important to kill and reschedule any tasks running on it and also copy any files present on that resource to a different resource that is not being removed.</p>
+    <p>The removed resource is deregistered from the server, so that no new tasks are scheduled on it.</p>
+    <hr class="skill_separator">
+  </body>
+</html>

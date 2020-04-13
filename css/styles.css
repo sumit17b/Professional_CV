@@ -24,8 +24,13 @@ h3 {
   font-family: 'Montserrat', sans-serif;
 }
 
+h4 {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .award_images {
   width: 50%;
+  border: solid 8px black;
 }
 
 .coder {
