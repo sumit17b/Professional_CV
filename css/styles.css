@@ -116,6 +116,10 @@ h4 {
   font-family: 'PT Mono', monospace;
 }
 
+.home_button {
+  text-align: right;
+}
+
 .movie {
   font-family: 'Permanent Marker',cursive;
 }
