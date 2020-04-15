@@ -11,44 +11,56 @@ body {
 }
 
 h1 {
-  margin-top: 0;
+  margin: 2rem auto 0 auto; /*top right bottom left*/
   font-family: 'Sacramento',cursive;
-  font-size: 3em;
+  font-size: 4rem;
+  /*1em = 1rem = 16px*/
+  line-height: 1;
 }
 
 h2 {
   font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
 }
 
 h3 {
   font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
 }
 
 h4 {
   font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
 }
 
+/******** Div Start ********/
+.first_div {
+  color: black;
+  background-color: #3498db;
+  padding: 2.8%;
+  margin: 0 0 10px 0;
+  text-align: center;
+  position: relative; /*its children can have absolute position and their position value will be relative to this*/
+}
+
+.skill_row {
+  width: 50%;
+  margin: 32px auto auto auto;
+  line-height: 1;
+  text-align: left;
+  clear: left; /*makes sure there is nothing to the left. So basically removes the float that was set in a prev element*/
+}
+
+.third_div {
+  background-color: #3498db;
+}
+/******** Div End ********/
+
+/******** Images Start ********/
 .award_images {
   width: 50%;
   border: solid 8px black;
-}
-
-.coder {
-  font-family: 'PT Mono', monospace;
-  font-size: 20px;
-}
-
-.movie {
-  font-family: 'Permanent Marker',cursive;
-  font-size: 20px;
-}
-
-.first_div {
-  background-color: #3498db;
-  padding: 2.8%;
-  margin: 1.6%;
-  text-align: center;
-  position: relative; /*its children can have absolute position and their position value will be relative to this*/
 }
 
 .first_cloud {
@@ -59,30 +71,33 @@ h4 {
   top: 1%;
 }
 
+.mountain {
+  display: inline;
+}
+
 .second_cloud {
   position: absolute;
   left: 24%;
   bottom: 56%;
 }
 
-.mountain {
-  display: inline;
-}
-
-.second_div {
-}
-
-.profile {
+.skill_image {
+  width: 25%;
+  height: 25%;
+  float: left; /*useful for wrapping text around this element. But use very carefully.*/
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .sumit_image {
   width: 120px;
   height: 180px;
 }
+/******** Images End ********/
 
-.skill_image {
-  width: 320px;
-  height: 320px;
+/******** Separator Start ********/
+.full_separator {
+  clear: both;
 }
 
 .skill_separator {
@@ -92,4 +107,22 @@ h4 {
   border-width: 5px;
   width: 5%;
   height: 0;
+  clear: both;
 }
+/******** Separator End ********/
+
+/******** Text Start ********/
+.coder {
+  font-family: 'PT Mono', monospace;
+}
+
+.movie {
+  font-family: 'Permanent Marker',cursive;
+}
+
+.skill_project_heading {
+  margin-top: 1.5rem;
+  clear: both;
+  line-height: 0;
+}
+/******** Text End ********/
