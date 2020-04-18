@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Sumit Bhagwanani</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&family=Montserrat:ital,wght@0,600;1,500&family=PT+Mono&family=Permanent+Marker&family=Sacramento&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <!--
+
+<head>
+  <meta charset="utf-8">
+  <title>Sumit Bhagwanani</title>
+  <!-- cdn for bootstrap css -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- local css -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <link rel="icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&family=Montserrat:ital,wght@0,600;1,500&family=PT+Mono&family=Permanent+Marker&family=Sacramento&display=swap" rel="stylesheet">
+
+  <!-- bootstrap javascript begin -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- bootstrap javascript end -->
+</head>
+
+<body>
+  <!--
     div is a content division element
     div allows us to divide content on a website
     can structure each div separately
@@ -31,16 +44,42 @@
 
     display: none;
     gets rid of the element.
-    -->
+  -->
+
+  <section class="navigation-bar">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="">Sumit Bhagwanani</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#employment-section">Employment History</a> <!-- using the name of the id inside href, to go directly to that id -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills-section">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-section">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+
+  <section id="title-section">
     <div class="first_div">
       <img class="first_cloud" src="images/cloud.png" alt="cloud-img">
       <h1>I'm Sumit.</h1>
       <h2><span class="coder">Programmer by day 💻.</span> <span class="movie">Movie critic by night 🎬!</span></h2>
 
       <img class="second_cloud" src="images/cloud.png" alt="cloud-img">
-      <img class="mountain", src="images/mountain.png" alt="cloud-img">
+      <img class="mountain" , src="images/mountain.png" alt="cloud-img">
     </div>
+  </section>
 
+  <section id="profile-section">
     <div class="second_div">
       <div class="profile">
         <img class="sumit_image" src="images/sumit.JPG" alt="sumit_image">
@@ -49,29 +88,38 @@
         <p>I am a part of the <a href="https://www.synopsys.com/implementation-and-signoff/physical-verification.html">IC Validator product</a> and work in the Distributed Processing team.</p>
       </div>
       <hr class="full_separator">
-      <div class="skills">
-        <h2>My Skills.</h2>
-        <hr class="skill_separator">
-        <div class="skill_row">
-          <img class="skill_image" src="images/client_server.png" alt="distributed_image">
-          <h3>Highly Scalable Distributed Processing Applications</h3>
-          <p>C | C++ | Linux | Bash</p>
-          <h4 class="skill_project_heading">Projects</h4>
-          <a href="elastic_resource_management.html">Elastic Resource Management</a>
-          <p>More projects Coming Soon!</p>
-        </div>
-        <hr class="skill_separator">
-        <div class="skill_row">
-          <img class="skill_image" src="images/desktop_gui.svg" alt="desktop_gui">
-          <h3>Desktop GUI Applications</h3>
-          <p>Python | PyQt</p>
-          <h4 class="skill_project_heading">Projects</h4>
-          <p>Projects Coming Soon!</p>
-        </div>
-      </div>
-      <hr class="full_separator">
-    </div>
+  </section>
 
+  <section id="employment-section">
+    Employment History
+  </section>
+
+  <section id="skills-section">
+    <div class="skills">
+      <h2>My Skills.</h2>
+      <hr class="skill_separator">
+      <div class="skill_row">
+        <img class="skill_image" src="images/client_server.png" alt="distributed_image">
+        <h3>Highly Scalable Distributed Processing Applications</h3>
+        <p>C | C++ | Linux | Bash</p>
+        <h4 class="skill_project_heading">Projects</h4>
+        <a href="elastic_resource_management.html">Elastic Resource Management</a>
+        <p>More projects Coming Soon!</p>
+      </div>
+      <hr class="skill_separator">
+      <div class="skill_row">
+        <img class="skill_image" src="images/desktop_gui.svg" alt="desktop_gui">
+        <h3>Desktop GUI Applications</h3>
+        <p>Python | PyQt</p>
+        <h4 class="skill_project_heading">Projects</h4>
+        <p>Projects Coming Soon!</p>
+      </div>
+    </div>
+    <hr class="full_separator">
+    </div>
+  </section>
+
+  <section id="contact-section">
     <div class="third_div">
       <div class="contact-me">
         <h3>Get In Touch</h3>
@@ -84,9 +132,11 @@
       </div>
       <br>
     </div>
+  </section>
 
-    <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+  <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 
 
-  </body>
+</body>
+
 </html>
