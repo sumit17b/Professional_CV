@@ -7,6 +7,7 @@ body {
   background-color: #1abc9c;
   margin: 0;
   font-family: 'Merriweather',serif;
+  text-align: center;
 }
 
 h1 {
@@ -20,7 +21,7 @@ h1 {
 h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 h3 {
@@ -33,7 +34,18 @@ h4 {
   font-size: 1.25rem;
 }
 
+p {
+  margin-bottom: 0;
+}
+
 /* navigation-bar section begin */
+#navigation-bar {
+  background-color: #3498db;
+}
+
+.navbar-collapse {
+  text-align: right;
+}
 /* navigation-bar section end */
 
 /* title-section begin */
@@ -77,6 +89,7 @@ h4 {
 /* profile-section begin */
 #profile-section {
   text-align: center;
+  padding: 4% 20%;
 }
 
 .sumit_image {
@@ -89,12 +102,37 @@ h4 {
 #employment-section {
   text-align: center;
   background-color: #3498db;
+  padding: 4%;
+}
+
+.card {
+  text-align: center;
+  background-color: #3498db;
+  border: 1px solid #8f8f8f;
+}
+
+.employment-col {
+  margin-top: 1%;
+  padding: 1% 5%;
 }
 /* employment-section end */
+
+/* education-section begin */
+#education-section {
+  text-align: center;
+  padding: 4%;
+}
+
+.education-col {
+  background-color: #1abc9c;
+}
+/* education-section end */
 
 /* skills-section begin */
 #skills-section {
   text-align: center;
+  background-color: #3498db;
+  padding: 4%;
 }
 
 .skill_separator {
@@ -107,33 +145,33 @@ h4 {
   clear: both;
 }
 
-.skill_row {
+.skill-col {
   width: 50%;
   margin: 32px auto auto auto;
   line-height: 1;
-  text-align: left;
-  clear: left; /*makes sure there is nothing to the left. So basically removes the float that was set in a prev element*/
+  text-align: center;
+  /*clear: left;*/ /*makes sure there is nothing to the left. So basically removes the float that was set in a prev element*/
 }
 
 .skill_image {
   width: 25%;
   height: 25%;
-  float: left; /*useful for wrapping text around this element. But use very carefully.*/
-  margin-right: 30px;
+  /*float: left;*/ /*useful for wrapping text around this element. But use very carefully.*/
   margin-bottom: 30px;
 }
 
 .skill_project_heading {
   margin-top: 1.5rem;
-  clear: both;
+  /*clear: both;*/
   line-height: 0;
 }
 /* skills-section end */
 
 /* contact-section begin */
 #contact-section {
-  background-color: #3498db;
   text-align: center;
+  padding-top: 2%;
+  padding-bottom: 0.5%;
 }
 /* contact-section end */
 
