@@ -7,7 +7,6 @@ body {
   background-color: #1abc9c;
   margin: 0;
   font-family: 'Merriweather',serif;
-  text-align: center;
 }
 
 h1 {
@@ -34,33 +33,17 @@ h4 {
   font-size: 1.25rem;
 }
 
-/******** Div Start ********/
-.first_div {
+/* navigation-bar section begin */
+/* navigation-bar section end */
+
+/* title-section begin */
+#title-section {
   color: black;
   background-color: #3498db;
   padding: 2.8%;
   margin: 0 0 10px 0;
   text-align: center;
   position: relative; /*its children can have absolute position and their position value will be relative to this*/
-}
-
-.skill_row {
-  width: 50%;
-  margin: 32px auto auto auto;
-  line-height: 1;
-  text-align: left;
-  clear: left; /*makes sure there is nothing to the left. So basically removes the float that was set in a prev element*/
-}
-
-.third_div {
-  background-color: #3498db;
-}
-/******** Div End ********/
-
-/******** Images Start ********/
-.award_images {
-  width: 50%;
-  border: solid 8px black;
 }
 
 .first_cloud {
@@ -81,23 +64,37 @@ h4 {
   bottom: 56%;
 }
 
-.skill_image {
-  width: 25%;
-  height: 25%;
-  float: left; /*useful for wrapping text around this element. But use very carefully.*/
-  margin-right: 30px;
-  margin-bottom: 30px;
+.coder {
+  font-family: 'PT Mono', monospace;
+}
+
+.movie {
+  font-family: 'Permanent Marker',cursive;
+}
+/* title-section end */
+
+
+/* profile-section begin */
+#profile-section {
+  text-align: center;
 }
 
 .sumit_image {
   width: 120px;
   height: 180px;
 }
-/******** Images End ********/
+/* profile-section end */
 
-/******** Separator Start ********/
-.full_separator {
-  clear: both;
+/* employment-section begin */
+#employment-section {
+  text-align: center;
+  background-color: #3498db;
+}
+/* employment-section end */
+
+/* skills-section begin */
+#skills-section {
+  text-align: center;
 }
 
 .skill_separator {
@@ -109,24 +106,52 @@ h4 {
   height: 0;
   clear: both;
 }
-/******** Separator End ********/
 
-/******** Text Start ********/
-.coder {
-  font-family: 'PT Mono', monospace;
+.skill_row {
+  width: 50%;
+  margin: 32px auto auto auto;
+  line-height: 1;
+  text-align: left;
+  clear: left; /*makes sure there is nothing to the left. So basically removes the float that was set in a prev element*/
 }
 
-.home_button {
-  text-align: right;
-}
-
-.movie {
-  font-family: 'Permanent Marker',cursive;
+.skill_image {
+  width: 25%;
+  height: 25%;
+  float: left; /*useful for wrapping text around this element. But use very carefully.*/
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .skill_project_heading {
   margin-top: 1.5rem;
   clear: both;
   line-height: 0;
+}
+/* skills-section end */
+
+/* contact-section begin */
+#contact-section {
+  background-color: #3498db;
+  text-align: center;
+}
+/* contact-section end */
+
+/******** Images Start ********/
+.award_images {
+  width: 50%;
+  border: solid 8px black;
+}
+/******** Images End ********/
+
+/******** Separator Start ********/
+.full_separator {
+  clear: both;
+}
+/******** Separator End ********/
+
+/******** Text Start ********/
+.home_button {
+  text-align: right;
 }
 /******** Text End ********/
