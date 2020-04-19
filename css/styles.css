@@ -38,6 +38,8 @@ p {
   margin-bottom: 0;
 }
 
+.row:before, .row:after {display: none !important;}
+
 /* navigation-bar section begin */
 #navigation-bar {
   background-color: #3498db;
