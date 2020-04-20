@@ -2,17 +2,17 @@
 https://developer.mozilla.org/en-US/docs/Web/CSS/margin
 
 */
-
 body {
   background-color: #1abc9c;
   margin: 0;
-  font-family: 'Merriweather',serif;
+  font-family: 'Merriweather', serif;
   text-align: center;
 }
 
 h1 {
-  margin: 2rem auto 0 auto; /*top right bottom left*/
-  font-family: 'Sacramento',cursive;
+  margin: 2rem auto 0 auto;
+  /*top right bottom left*/
+  font-family: 'Sacramento', cursive;
   font-size: 4rem;
   /*1em = 1rem = 16px*/
   line-height: 1;
@@ -38,7 +38,10 @@ p {
   margin-bottom: 0;
 }
 
-.row:before, .row:after {display: none !important;}
+/* this fix is for safari browsers on the mac */
+.row:before, .row:after {
+  display: none !important;
+}
 
 /* navigation-bar section begin */
 #navigation-bar {
@@ -48,8 +51,8 @@ p {
 .navbar-collapse {
   text-align: right;
 }
-/* navigation-bar section end */
 
+/* navigation-bar section end */
 /* title-section begin */
 #title-section {
   color: black;
@@ -57,7 +60,8 @@ p {
   padding: 2.8%;
   margin: 0 0 10px 0;
   text-align: center;
-  position: relative; /*its children can have absolute position and their position value will be relative to this*/
+  position: relative;
+  /*its children can have absolute position and their position value will be relative to this*/
 }
 
 .first_cloud {
@@ -83,11 +87,10 @@ p {
 }
 
 .movie {
-  font-family: 'Permanent Marker',cursive;
+  font-family: 'Permanent Marker', cursive;
 }
+
 /* title-section end */
-
-
 /* profile-section begin */
 #profile-section {
   text-align: center;
@@ -98,8 +101,8 @@ p {
   width: 120px;
   height: 180px;
 }
-/* profile-section end */
 
+/* profile-section end */
 /* employment-section begin */
 #employment-section {
   text-align: center;
@@ -109,7 +112,7 @@ p {
 
 .card {
   text-align: center;
-  background-color: #3498db;
+  background-color: inherit;
   border: 1px solid #8f8f8f;
 }
 
@@ -117,8 +120,8 @@ p {
   margin-top: 1%;
   padding: 1% 5%;
 }
-/* employment-section end */
 
+/* employment-section end */
 /* education-section begin */
 #education-section {
   text-align: center;
@@ -128,8 +131,8 @@ p {
 .education-col {
   background-color: #1abc9c;
 }
-/* education-section end */
 
+/* education-section end */
 /* skills-section begin */
 #skills-section {
   text-align: center;
@@ -152,13 +155,15 @@ p {
   margin: 32px auto auto auto;
   line-height: 1;
   text-align: center;
-  /*clear: left;*/ /*makes sure there is nothing to the left. So basically removes the float that was set in a prev element*/
+  /*clear: left;*/
+  /*makes sure there is nothing to the left. So basically removes the float that was set in a prev element*/
 }
 
 .skill_image {
   width: 25%;
   height: 25%;
-  /*float: left;*/ /*useful for wrapping text around this element. But use very carefully.*/
+  /*float: left;*/
+  /*useful for wrapping text around this element. But use very carefully.*/
   margin-bottom: 30px;
 }
 
@@ -167,31 +172,63 @@ p {
   /*clear: both;*/
   line-height: 0;
 }
-/* skills-section end */
 
+/* skills-section end */
 /* contact-section begin */
 #contact-section {
   text-align: center;
   padding-top: 2%;
   padding-bottom: 0.5%;
 }
-/* contact-section end */
 
+/* contact-section end */
 /******** Images Start ********/
 .award_images {
   width: 50%;
   border: solid 8px black;
 }
-/******** Images End ********/
 
+/******** Images End ********/
 /******** Separator Start ********/
 .full_separator {
   clear: both;
 }
-/******** Separator End ********/
 
-/******** Text Start ********/
+/******** Separator End ********/
 .home_button {
   text-align: right;
+  padding-top: 1%;
 }
-/******** Text End ********/
+
+.big-brand {
+  word-wrap: break-word;
+  color: white;
+  font-size: 1.25rem;
+}
+
+/* this is triggered for browsers that have a width less than 980px */
+@media (max-width: 980px) {
+  #navigation-bar {
+    font-size: 1.5rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .big-brand {
+    word-wrap: break-word;
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .navbar-toggler-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .award_images {
+    width: 80%;
+    border: solid 8px black;
+  }
+}

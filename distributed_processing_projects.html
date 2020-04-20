@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Distributed Processing Projects</title>
+  <!-- cdn for bootstrap css -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- local css -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- favicon -->
+  <link rel="icon" href="favicon.ico">
+
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&family=Montserrat:ital,wght@0,600;1,500&family=PT+Mono&family=Permanent+Marker&family=Sacramento&display=swap" rel="stylesheet">
+
+  <!-- cdn for fontawesome -->
+  <script src="https://kit.fontawesome.com/7da8280118.js" crossorigin="anonymous"></script>
+
+  <!-- bootstrap javascript begin -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- bootstrap javascript end -->
+</head>
+
+<body>
+  <section id="navigation-bar">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <p class="big-brand">Projects for Highly Scalable Distributed Processing Applications</p>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a> <!-- using the name of the id inside href, to go directly to that id -->
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+  <br>
+
+  <section id="dp-projects-section">
+    <div class="row">
+      <div class="dp-projects-col col-lg-6 col-md-12 card">
+        <div class="card-header">
+          <h3>Elastic Resource Management (Horizontal Scalability)</h3>
+        </div>
+        <div class="card-body">
+          <p>C | C++</p>
+          <p>Dynamically adding and removing servers being used by the IC Validator.</p>
+          <a class="project-btn btn btn-lg btn-outline-dark" href="elastic_resource_management.html">Details</a>
+        </div>
+      </div>
+      <div class="dp-projects-col col-lg-6 col-md-12 card">
+        <div class="card-header">
+          <h3>Vertical Scalability</h3>
+        </div>
+        <div class="card-body">
+          <p>C | C++</p>
+          <p>Allowing individual tasks to run extra threads to parallelize processing, while controlling memory consumption on the server.</p>
+        </div>
+      </div>
+      <div class="dp-projects-col col-lg-6 col-md-12 card">
+        <div class="card-header">
+          <h3>Load Balancing</h3>
+        </div>
+        <div class="card-body">
+          <p>C | C++</p>
+          <p>Schedule individual tasks across the servers acquired, ensuring maximum utilization. Weighted round robin method of load balancing used. The weighting is based on the predicted memory consumption and predicted run time of individual
+            tasks.</p>
+        </div>
+      </div>
+      <div class="dp-projects-col col-lg-6 col-md-12 card">
+        <div class="card-header">
+          <h3>Improve Reliability</h3>
+        </div>
+        <div class="card-body">
+          <p>C | C++</p>
+          <p>Reschedule tasks if the server crashes or becomes unavailable.</p>
+        </div>
+      </div>
+      <div class="dp-projects-col col-lg-6 col-md-12 card">
+        <div class="card-header">
+          <h3>Native support for Batch Queueing Systems.</h3>
+        </div>
+        <div class="card-body">
+          <p>C | C++</p>
+          <p>IC Validator is able to directly use the servers acquired from any one of these batch queueing systems SGE|LSF|NetBatch.</p>
+        </div>
+      </div>
+      <div class="dp-projects-col col-lg-6 col-md-12 card">
+        <div class="card-header">
+          <h3>External tool to support Batch Queueing Systems.</h3>
+        </div>
+        <div class="card-body">
+          <p>Python</p>
+          <p>This tool provides a user-friendly interface for two batch queueing systems; SGE|LSF. This tool can be used to easily acquire servers from those batch queueing systems, and run IC Validator on them.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
